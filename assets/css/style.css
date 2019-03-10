@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(158, 220, 231);
+}
+#setTimer {
+    width:300px;
+    margin:auto;
+}
+#mainContent {
+    background-color: whitesmoke;
+    margin: 100px 100px 100px 100px;
+}
+
+.btn {
+    
+    width:300px;
+    height:100px;
+    margin-left: 520px;
+}
+
+#q1 {
+    background-color: rgba(255, 0, 0, 0.199);
+}
+#q2 {
+    background-color: rgba(0, 0, 255, 0.171);
+}
+#q3 {
+    background-color:rgba(0, 128, 0, 0.185);
+}
+#q4 {
+    background-color: rgba(255, 255, 0, 0.199);
+}
