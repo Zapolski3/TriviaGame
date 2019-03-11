@@ -3,6 +3,7 @@ body {
     background-image: url("../images/captain-sparrows-black-pearl-pirate-ship.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+    color:white;
 }
 #setTimer {
     width:300px;

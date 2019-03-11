@@ -2,12 +2,12 @@
 
 // 30 sec countdown Timer  
 
-var seconds = 60;
+var seconds = 5;
 
 var timerId;
 
 function reset(){
-    seconds = 60;
+    seconds = 5;
 }
 
 function run() {
@@ -27,7 +27,7 @@ function run() {
 
       //  ...run the stop function.
       stop();
-      lastStep ();
+      endGame();
         
       //  Alert the user that time is up.
       }
@@ -67,28 +67,27 @@ $('#startButton').on("click", function(){
     $('#doneButton').show();
 })
 
-var trueAns = 0;
-var falseAns = 0;
 
 
+/*
 $('.www').click(function(){
   var incorrect = $("input[value='false']:checked").val();
   var correct = $("input[value='true']:checked").val();
   // var neverClicked = $("input:unchecked").val(); 
   if(incorrect){
-    falseAns++;
+    
      console.log(falseAns);
      $('#wa').html('WRONG ANSWERS:'+ falseAns);
   }else if(correct){
-    trueAns++;
+    
     console.log(trueAns);
     $('#ca').html('CORRECT ANSWERS:'+trueAns);
   } else {
-    neverClicked++;
+    
     $('#ua').html('UNANSWERED:'+ neverClicked);
   }
 });
-
+*/
 
 
 function lastStep (){
@@ -98,9 +97,29 @@ function lastStep (){
   
 }
 
-$('#doneButton').click(function(){
-lastStep();
-});
+$('#doneButton').click(endGame);
+
+function endGame(){
+  // lastStep();
+  var trueAns = 0;
+  var falseAns = 0;
+  var neverClicked = 0;
+    $('form').each(function(i, element){
+        var response = $(element).children('input:checked').val();
+        if (response === "true"){
+          trueAns++;
+        } else if(response === "false"){
+          falseAns++;
+        } else {
+          neverClicked++;
+        }
+    })
+    $('#wa').html('WRONG ANSWERS:'+ falseAns);
+    $('#ca').html('CORRECT ANSWERS:'+ trueAns);
+    $('#ua').html('UNANSWERED:'+ neverClicked);
+    console.log(falseAns,trueAns,neverClicked )
+    lastStep();
+  };
 
 
 
