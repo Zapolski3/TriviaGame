@@ -10,63 +10,72 @@
 </head>
 
 <body>
-        
+
     <div id="setTimer">
         <h1>Seconds Left:60</h1>
     </div>
     <button id="startButton" class="btn">PRESS TO START</button>
     <div id="mainContent">
-        
-            
-        
+
+
+
 
         <div id="q1">
-            <form>
-                <h2>Approximately, how long did it take to sail across the Atlantic in 1776?</h2>
-                <input type="radio" value="at least six weeks" /> At least six weeks
-                <input type="radio" value="one week"/> One week
-                <input type="radio" value="two weeks" /> Two weeks
-                <input type="radio" value="one month"/> One month
+
+            <h2>Approximately, how long did it take to sail across the Atlantic in 1776?</h2>
+            <form action="">
+                <input class="www" type="radio" name="response" value="true"/> At least six weeks
+                <input class="www" type="radio" name="response" value="false"/> One week
+                <input class="www" type="radio" name="response" value="false"/> Two weeks
+                <input class="www" type="radio" name="response" value="false"/> One month
             </form>
         </div>
 
         <div id="q2">
-            <h3>Who was the first person to cross the Atlantic ocean?</h3>
-            <input type="radio" value="Leifur Eríksson" /> Leifur Eríksson
-            <input type="radio" value="Christopher Columbus" /> Christopher Columbus
-            <input type="radio" value="John Doe" /> John Doe
-            <input type="radio" value="your neighbor" />Your neighbor
-            
+            <form>
+                <h3>Who was the first person to cross the Atlantic ocean?</h3>
+                <input class="www"    type="radio" name="response" value="true"  /> Leifur Eríksson
+                <input class="www"  type="radio" name="response" value="false" /> Christopher Columbus
+                <input class="www"  type="radio" name="response" value="false" /> John Doe
+                <input class="www"  type="radio" name="response" value="false" />Your neighbor
+            </form>
 
         </div>
+
         <div id="q3">
-            <h3>What is the name of deepest known point in Earth's oceans?</h3>
-            <input type="radio" value="Cape May" /> Cape May
-            <input type="radio" value="Delaware River" /> Delaware river
-            <input type="radio" value="The Challenger Deep in the Mariana Trench" /> The Challenger Deep 
-            <input type="radio" value="A road pothole" />A road pothole
+            <form>
+                <h3>What is the name of deepest known point in Earth's oceans?</h3>
+                <input class="www" type="radio" name="response" value="false" /> Cape May
+                <input class="www" type="radio" name="response" value="false" /> Delaware river
+                <input class="www" type="radio" name="response" value="true" /> The Challenger Deep
+                <input class="www" type="radio" name="response" value="false" />A road pothole
+            </form>
 
         </div>
+
         <div id="q4">
-            <h4>What ocean is the second largest in the world</h4>
-            <input type="radio" value="Indian ocean" />Indian ocean
-            <input type="radio" value="North Pacific" />North Pacific
-            <input type="radio" value="Arctic" />Arctic
-            <input type="radio" value="Atlantic ocean" />Atlantic ocean
+            <form>
+                <h4>What ocean is the second largest in the world</h4>
+                <input class="www" type="radio" name="response" value="false" />Indian ocean
+                <input class="www" type="radio" name="response" value="false" />North Pacific
+                <input class="www" type="radio" name="response" value="false" />Arctic
+                <input class="www"   type="radio" name="response" value="true" />Atlantic ocean
+            </form>
         </div>
 
+        
+     </div>
+    <button id="doneButton" class="doneBtn">DONE</button>
+<div id="finalContent">
+<h4 id="ca">correct answers:</h4>
+<h5 id="wa">wrong answers:</h5>
+<h6 id="ua">unanswered:</h6>
 
-
-
-
-
-    </div>
-
-
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="assets/javascript/app.js" type="text/javascript"></script>
-    
+
 </body>
 
 </html>

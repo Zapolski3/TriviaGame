@@ -1,17 +1,22 @@
 body {
-    background-color: rgb(158, 220, 231);
+    background-color:black;
+    background-image: url("../images/captain-sparrows-black-pearl-pirate-ship.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 #setTimer {
     width:300px;
     margin:auto;
 }
-#mainContent {
-    background-color: whitesmoke;
-    margin: 100px 100px 100px 100px;
+#mainContent, #finalContent {
+    border-radius: 10px;
+    ackground-color: whitesmoke;
+    margin: 100px 120px 100px 120px;
 }
 
-.btn {
-    
+.btn, .doneBtn {
+    border-radius: 10px;
+    font-size:32px;
     width:300px;
     height:100px;
     margin-left: 520px;
