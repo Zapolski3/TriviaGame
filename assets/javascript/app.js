@@ -2,7 +2,7 @@
 
 // 30 sec countdown Timer  
 
-var seconds = 5;
+var seconds = 60;
 
 var timerId;
 
@@ -55,6 +55,7 @@ function hideAll (){
     $('#q4').hide();
     $('#doneButton').hide();
     $('#finalContent').hide();
+    $('#setTimer').hide();
 }
 
 $('#startButton').on("click", function(){
@@ -65,7 +66,8 @@ $('#startButton').on("click", function(){
     $('#q3').show();
     $('#q4').show();
     $('#doneButton').show();
-})
+    $('#setTimer').show();
+});
 
 
 
@@ -101,6 +103,7 @@ $('#doneButton').click(endGame);
 
 function endGame(){
   // lastStep();
+  stop();
   var trueAns = 0;
   var falseAns = 0;
   var neverClicked = 0;

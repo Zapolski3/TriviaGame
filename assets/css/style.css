@@ -17,21 +17,35 @@ body {
 
 .btn, .doneBtn {
     border-radius: 10px;
-    font-size:32px;
-    width:300px;
-    height:100px;
-    margin-left: 520px;
+    font-size:30px;
+    width:270px;
+    height:80px;
+    margin-left: 550px;
 }
 
 #q1 {
+    font-size:18px;
     background-color: rgba(255, 0, 0, 0.199);
 }
 #q2 {
+    font-size:22px;
     background-color: rgba(0, 0, 255, 0.171);
 }
 #q3 {
+    font-size:22px;
     background-color:rgba(0, 128, 0, 0.185);
 }
 #q4 {
-    background-color: rgba(255, 255, 0, 0.199);
+    font-size:22px;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+h4 {
+    font-size:19px;
+}
+h5 {
+    font-size:18px;
+}
+h6 {
+    font-size:17px;
 }
