@@ -108,6 +108,8 @@ function endGame(){
   var falseAns = 0;
   var neverClicked = 0;
     $('form').each(function(i, element){
+      console.log(i);
+      console.log(element);
         var response = $(element).children('input:checked').val();
         if (response === "true"){
           trueAns++;
