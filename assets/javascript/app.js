@@ -53,9 +53,11 @@ function hideAll (){
     $('#q2').hide();
     $('#q3').hide();
     $('#q4').hide();
+    $('#q5').hide();
     $('#doneButton').hide();
     $('#finalContent').hide();
     $('#setTimer').hide();
+
 }
 
 $('#startButton').on("click", function(){
@@ -65,6 +67,7 @@ $('#startButton').on("click", function(){
     $('#q2').show();
     $('#q3').show();
     $('#q4').show();
+    $('#q5').show();
     $('#doneButton').show();
     $('#setTimer').show();
 });
@@ -119,9 +122,9 @@ function endGame(){
           neverClicked++;
         }
     })
-    $('#wa').html('WRONG ANSWERS:'+ falseAns);
-    $('#ca').html('CORRECT ANSWERS:'+ trueAns);
-    $('#ua').html('UNANSWERED:'+ neverClicked);
+    $('#wa').html('WRONG ANSWERS:'+" "+ falseAns);
+    $('#ca').html('CORRECT ANSWERS:'+" "+ trueAns);
+    $('#ua').html('UNANSWERED:'+" "+ neverClicked);
     console.log(falseAns,trueAns,neverClicked )
     lastStep();
   };

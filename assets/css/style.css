@@ -15,16 +15,24 @@ body {
     margin: 100px 120px 100px 120px;
 }
 
-.btn, .doneBtn {
+.btn {
     border-radius: 10px;
     font-size:30px;
     width:270px;
     height:80px;
     margin-left: 550px;
 }
+.doneBtn {
+    border-radius: 10px;
+    font-size:30px;
+    width:250px;
+    height:50px;
+    margin-left: 440px;
+   
+}
 
 #q1 {
-    font-size:18px;
+    font-size:19px;
     background-color: rgba(255, 0, 0, 0.199);
 }
 #q2 {
@@ -38,6 +46,10 @@ body {
 #q4 {
     font-size:22px;
     background-color: rgba(255, 255, 255, 0.233);
+}
+#q5 {
+    font-size:22px;
+    background-color: rgba(0, 0, 0, 0.247);
 }
 
 h4 {
